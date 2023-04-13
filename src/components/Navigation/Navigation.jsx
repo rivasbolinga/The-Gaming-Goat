@@ -3,11 +3,10 @@ import logoIcon from '../../assets/logo.png';
 const Navigation = () => {
 return (
   <nav className="navigation-bar">
-    <div className="logo">
+    <Link to="/" className="logo-container">
       <img className="logo-icon" src={logoIcon}>
-
       </img>
-    </div>
+    </Link>
   </nav>
 )
 }
