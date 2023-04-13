@@ -5,6 +5,7 @@ import NavigationMobile from './components/Navigation/NavMobile';
 import { HashRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Footer from './components/Footer';
+import Error from './pages/Error';
 
 function App() {
 
