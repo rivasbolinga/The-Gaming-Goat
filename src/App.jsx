@@ -1,14 +1,19 @@
-import './App.css'
+import './App.css';
+import React, { useState, useEffect } from 'react';
+import Navigation from './components/Navigation/Navigation';
+import NavigationMobile from './components/Navigation/NavMobile';
+import { HashRouter, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import Footer from './components/Footer';
 
 function App() {
 
-  return (
      const [width, setWidth] = useState(window.innerWidth);
   useEffect(() => {
     function handleResize() {
       setWidth(window.innerWidth);
     }
-    AOS.init();
+
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
@@ -16,26 +21,15 @@ function App() {
     <>
       <HashRouter>
         {width < 769 ? <NavigationMobile /> : <Navigation />}
-        <hr id="top" />
         <Routes>
           <Route path="/" element={<Home />} />
-          {width < 768 ? (
-            <Route path="/about" element={<AboutPhone />} />
-          ) : (
-            <Route path="/about" element={<About />} />
-          )}
-          
-          <Route path="/bookings" element={<Bookings />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/sophrology" element={<Sophrology />} />
-          <Route path="/massages" element={<Massages />} />
-          <Route path="*" element={<Default404 />} />
+          <Route path="*" element={<Error />} />
         </Routes>
         <Footer />
       </HashRouter>
     </>
   )
-  )
+
 }
 
 export default App
