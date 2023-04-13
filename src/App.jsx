@@ -6,6 +6,8 @@ import { HashRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Footer from './components/Footer';
 import Error from './pages/Error';
+import MyProfile from './pages/MyProfile';
+import Cart from './pages/Cart';
 
 function App() {
 
@@ -24,6 +26,8 @@ function App() {
         {width < 769 ? <NavigationMobile /> : <Navigation />}
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="*" element={<Cart />} />
+          <Route path="*" element={<MyProfile />} />
           <Route path="*" element={<Error />} />
         </Routes>
         <Footer />
