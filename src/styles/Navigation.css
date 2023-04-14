@@ -1,0 +1,39 @@
+.navigation-bar {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  height: 70px;
+  background-color: rgb(22,15,56);
+  align-items: center;
+}
+
+.logo-icon {
+  width: 100px;
+}
+
+.genre-selections {
+  width: 200px;
+  height: 40px;
+  background-color: rgb(22,15,56) ;
+  color: rgb(73,78,110);
+  font-size: 20px;
+  border: 1px solid rgb(35,22,71);
+}
+
+.search-form {
+  background-color: rgb(22,15,56);
+  border: 1px solid rgb(67, 49, 116);
+  border-radius: 30px;
+  color: rgb(73,78,110);
+  font-size: 16px;
+  width: 300px;
+  height: 40px;
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-input {
+  background: none;
+  border: none;
+}
