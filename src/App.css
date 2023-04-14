@@ -1,4 +1,7 @@
-#root {
-  margin: 0 auto;
-  padding: 2rem;
+
+
+body {
+  background-color: rgb(22,15,56);
+  padding: 0;
+  margin: 0;
 }

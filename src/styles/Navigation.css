@@ -2,13 +2,19 @@
   display: flex;
   flex-direction: row;
   gap: 20px;
-  height: 70px;
+  height: 80px;
   background-color: rgb(22,15,56);
   align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 1px solid  rgb(56, 43, 112);
 }
 
 .logo-icon {
-  width: 100px;
+  width: 85px;
+  height: 83px;
 }
 
 .genre-selections {
@@ -36,4 +42,35 @@
 .search-input {
   background: none;
   border: none;
+}
+
+.search-btn {
+  background: none;
+  border: none;
+   color: rgb(73,78,110);
+   font-size: 20px;
+   padding-right: 20px;
+}
+
+.icons-container {
+  display: flex;
+  gap: 20px;
+  justify-content: start;
+  align-items: center;
+}
+
+.link-icon {
+  color: rgb(159,142,205);
+  border: 2px solid rgb(58, 36, 100);
+  border-radius: 20px;
+  font-size: 20px;
+  background-color: rgb(44,27,87);
+  padding: 10px 13px 10px 13px;
+  height: 25px;
+}
+
+.vertical-line {
+  background-color: rgb(56, 43, 112);
+  height: 80px;
+  width: 1px;
 }

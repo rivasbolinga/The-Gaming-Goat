@@ -1,7 +1,9 @@
 import logoIcon from '../../assets/logo.png';
-import { BsSearch, BsFillPersonFill, BsFillCartFill } from 'react-icons/bs'
+import { BsSearch, BsFillPersonFill, BsFillCartFill } from 'react-icons/bs';
+import { AiFillHeart } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
-import '../../styles/Navigation.css'
+import '../../styles/Navigation.css';
+
 const Navigation = () => {
 return (
   <nav className="navigation-bar">
@@ -21,12 +23,21 @@ return (
         <BsSearch />
       </button>
     </form>
-    <Link to="/" className="my-profile-link">
-      <BsFillPersonFill />
-    </Link>
-    <Link to="/" className="my-profile-link">
-      <BsFillCartFill />
-    </Link>
+    <div className="icons-container">
+      <Link to="/" className="my-profile link-icon">
+        <AiFillHeart />
+      </Link>
+      <div className="vertical-line"></div>
+      <Link to="/" className="my-cart link-icon">
+        <BsFillCartFill />
+      </Link>
+      <div className="vertical-line"></div>
+      <Link to="/" className="my-cart link-icon">
+        
+        <BsFillPersonFill />
+      </Link>
+      <div className="vertical-line"></div>
+    </div>
   </nav>
 )
 }
