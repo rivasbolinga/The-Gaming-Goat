@@ -7,14 +7,25 @@
   padding: 0;
   margin: 0;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
   border-bottom: 1px solid  rgb(56, 43, 112);
 }
 
 .logo-container {
   width: 80px;
   height: 100%;
-  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.filter-container,
+.form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 
 .logo-icon {
@@ -30,7 +41,7 @@
   border: 1px solid rgb(67, 49, 116);
   font-family: 'Nunito Sans', sans-serif;
   border-radius: 20px;
-  width: 200px;
+  
   padding-left: 10px;
 }
 
@@ -47,7 +58,7 @@ option {
   border-radius: 30px;
   color: rgb(73,78,110);
   font-size: 16px;
-  width: 300px;
+
   height: 40px;
   padding-left: 20px;
   display: flex;
@@ -72,6 +83,40 @@ option {
 
 .icons-container {
   display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.link-icon {
+  color: rgb(159,142,205);
+  border: 2px solid rgb(58, 36, 100);
+  border-radius: 20px;
+  font-size: 15px;
+  background-color: rgb(44,27,87);
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+
+.nav-logo {
+  padding-top: 10px;
+}
+
+.vertical-line {
+  background-color: rgb(56, 43, 112);
+  height: 80px;
+  width: 1px;
+}
+
+@media (min-width: 1024px) {
+  .filter-container,
+  .form-container {
+  gap: 15px;
+}
+
+.icons-container {
+  display: flex;
   gap: 20px;
   justify-content: flex-start;
   align-items: center;
@@ -83,20 +128,21 @@ option {
   border-radius: 20px;
   font-size: 20px;
   background-color: rgb(44,27,87);
-  padding: 10px 13px 10px 13px;
-  height: 25px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
 }
 
-.vertical-line {
-  background-color: rgb(56, 43, 112);
-  height: 80px;
-  width: 1px;
+.nav-logo {
+  padding-top: 15px;
 }
 
-@media (max-width: 768px) {
+.search-form {
+  width: 300px;
+}
+
 .logo-container {
-  width: 120px;
-  height: 100%;
-  margin-left: 0;
+  width: 100px;
 }
 }
+
