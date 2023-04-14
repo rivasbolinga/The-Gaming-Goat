@@ -1,8 +1,8 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import Navigation from './components/Navigation/Navigation';
 import NavigationMobile from './components/Navigation/NavMobile';
-import { HashRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Footer from './components/Footer';
 import Error from './pages/Error';
@@ -10,8 +10,7 @@ import MyProfile from './pages/MyProfile';
 import Cart from './pages/Cart';
 
 function App() {
-
-     const [width, setWidth] = useState(window.innerWidth);
+  const [width, setWidth] = useState(window.innerWidth);
   useEffect(() => {
     function handleResize() {
       setWidth(window.innerWidth);
@@ -33,8 +32,7 @@ function App() {
         <Footer />
       </HashRouter>
     </>
-  )
-
+  );
 }
 
-export default App
+export default App;
