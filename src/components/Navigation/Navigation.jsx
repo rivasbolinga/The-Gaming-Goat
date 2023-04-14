@@ -12,7 +12,17 @@ return (
     </Link>
     <div className="vertical-line"></div>
     <select name="genres" className="genre-selections">
-      <option>All genres</option>
+      <option value="all">All genres</option>
+      <option value="fighting">Fighting</option>
+      <option value="shooter">Shooter</option>
+      <option value="music">Music</option>
+      <option value="platform">Platform</option>
+      <option value="puzzle">Puzzle</option>
+      <option value="racing">Racing</option>
+      <option value="real-time-strategy-rts">Real Time Strategy (RTS)</option>
+      <option value="role-playing-rpg">Role-playing (RPG)</option>
+      <option value="simulator">Simulator</option>
+      <option value="sport">Sport</option>
     </select>
     <div className="vertical-line"></div>
     <form className="search-form">
@@ -31,11 +41,11 @@ return (
         <AiFillHeart />
       </Link>
       <div className="vertical-line"></div>
-      <Link to="/" className="my-cart link-icon">
+      <Link to="/my-profile" className="my-cart link-icon">
         <BsFillCartFill />
       </Link>
       <div className="vertical-line"></div>
-      <Link to="/" className="my-cart link-icon">
+      <Link to="/cart" className="my-cart link-icon">
         <BsFillPersonFill />
       </Link>
       <div className="vertical-line"></div>

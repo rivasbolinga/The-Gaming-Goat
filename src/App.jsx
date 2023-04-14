@@ -23,11 +23,11 @@ function App() {
   return (
     <>
       <HashRouter>
-        {width < 769 ? <NavigationMobile /> : <Navigation />}
+        {width < 768 ? <NavigationMobile /> : <Navigation />}
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="*" element={<Cart />} />
-          <Route path="*" element={<MyProfile />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/my-profile" element={<MyProfile />} />
           <Route path="*" element={<Error />} />
         </Routes>
         <Footer />

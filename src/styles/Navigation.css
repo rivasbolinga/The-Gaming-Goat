@@ -1,7 +1,6 @@
 .navigation-bar {
   display: flex;
   flex-direction: row;
-  gap: 20px;
   height: 80px;
   background-color: rgb(22,15,56);
   align-items: center;
@@ -12,22 +11,34 @@
   border-bottom: 1px solid  rgb(56, 43, 112);
 }
 
+.logo-container {
+  width: 80px;
+  height: 100%;
+  margin-left: 20px;
+}
+
 .logo-icon {
-  width: 85px;
-  height: 83px;
+  width: 100%;
+  height: 100%;
 }
 
 .genre-selections {
-  width: 200px;
   height: 40px;
   background-color: rgb(22,15,56) ;
-  color: rgb(73,78,110);
-  font-size: 20px;
+  color: rgb(128, 131, 149);
+  font-size: 16px;
   border: 1px solid rgb(67, 49, 116);
   font-family: 'Nunito Sans', sans-serif;
   border-radius: 20px;
   width: 200px;
-  padding: auto 20px auto 20px;
+  padding-left: 10px;
+}
+
+option {
+  background-color: rgb(22,15,56) ;
+  color: rgb(112, 113, 120);
+  font-size: 16px;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 .search-form {
@@ -62,7 +73,7 @@
 .icons-container {
   display: flex;
   gap: 20px;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -80,4 +91,40 @@
   background-color: rgb(56, 43, 112);
   height: 80px;
   width: 1px;
+}
+
+.mobile-icon {
+  width: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+}
+
+.icons-container-mobile {
+  gap: 6px;
+ 
+}
+
+.icons-container-mobile  a{
+  padding: 5px;
+ 
+}
+
+.form-mobile {
+  width: 100px;
+  padding-left: 5px;
+}
+
+.search-input {
+  width: 40%;
+}
+
+.mobile-selections {
+  width: 27%;
+}
+
+.nav-mobile {
+  padding: 5px;
+  gap: 5px;
+  justify-content: center;
 }
