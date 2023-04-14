@@ -23,7 +23,11 @@
   background-color: rgb(22,15,56) ;
   color: rgb(73,78,110);
   font-size: 20px;
-  border: 1px solid rgb(35,22,71);
+  border: 1px solid rgb(67, 49, 116);
+  font-family: 'Nunito Sans', sans-serif;
+  border-radius: 20px;
+  width: 200px;
+  padding: auto 20px auto 20px;
 }
 
 .search-form {
@@ -42,6 +46,9 @@
 .search-input {
   background: none;
   border: none;
+  font-family: 'Nunito Sans', sans-serif;
+  color: rgb(71, 76, 104);
+  width: 250px;
 }
 
 .search-btn {
