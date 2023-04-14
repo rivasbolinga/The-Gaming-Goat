@@ -41,14 +41,8 @@ const NavigationMobile = () => {
         </button>
       </form>
       <div className="icons-container icons-container-mobile">
-        <Link to="/" className="my-profile link-icon mobile-icon">
-          <AiFillHeart />
-        </Link>
         <Link to="/my-profile" className="my-cart link-icon mobile-icon">
           <BsFillCartFill />
-        </Link>
-        <Link to="/cart" className="my-cart link-icon mobile-icon">
-          <BsFillPersonFill />
         </Link>
       </div>
     </nav>

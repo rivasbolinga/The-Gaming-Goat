@@ -111,16 +111,16 @@ option {
 }
 
 .form-mobile {
-  width: 100px;
+  width: 50%;
   padding-left: 5px;
 }
 
 .search-input {
-  width: 40%;
+  width: 100%;
 }
 
 .mobile-selections {
-  width: 27%;
+  width: 32%;
 }
 
 .nav-mobile {
