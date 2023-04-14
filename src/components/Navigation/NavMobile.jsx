@@ -1,16 +1,11 @@
 import React, { useState } from 'react';
-import { Spin as Hamburger } from 'hamburger-react'
-import { Link } from 'react-router-dom'
-import logoIcon from '../../assets/logo.png'
+import { Link } from 'react-router-dom';
 import {
   BsSearch,
-  BsFillPersonFill,
   BsFillCartFill,
-  BsFilterLeft,
-} from 'react-icons/bs'
-import { AiFillHeart } from 'react-icons/ai'
 
-import '../../styles/Navigation.css';
+} from 'react-icons/bs'
+import '../../styles/NavigationMobile.css';
 
 const NavigationMobile = () => {
   const [isOpen, setOpen] = useState(false);
