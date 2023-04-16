@@ -55,7 +55,6 @@ option {
   background-color: rgb(22, 15, 56);
   border: 1px solid rgb(67, 49, 116);
   border-radius: 30px;
-  color: rgb(73, 78, 110);
   font-size: 16px;
   height: 40px;
   padding-left: 20px;
@@ -75,7 +74,6 @@ option {
 .search-input::placeholder {
   color: rgb(159, 142, 205);
 }
-
 
 .search-btn {
   background: none;
