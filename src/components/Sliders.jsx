@@ -1,6 +1,6 @@
 const Sliders = () => {
 return (
-  Sliders
+  <div>Sliders</div>
 )
 }
 
