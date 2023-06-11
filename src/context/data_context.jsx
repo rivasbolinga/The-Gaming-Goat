@@ -15,15 +15,11 @@ const GamesContext = createContext();
 
 export const GamesProvider = ({children}) => {
   const [state, dispatch] = useReducer(reducer, initialState);
-useEffect(() => {
-  const fetchData = async () => {
-    const response = await fetch('/games.json')
-    const data = await response.json()
-    setGames(data.slice(0, 5))
+ 
+  const fetchGames = async() => {
+    dispatch({type:GET_GAMES_BEGIN})
+   
   }
-
-  fetchData()
-}, [])
 
 return (
   <GamesContext.Provider value={{}}>
