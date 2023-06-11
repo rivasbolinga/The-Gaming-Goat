@@ -1,33 +1,26 @@
-import React, { createContext, useContext, useEffect } from 'react';
-import { 
-  GET_GAMES_BEGIN,
-  GET_GAMES_SUCCESS,
-  GET_GAMES_ERROR
- } from '../actions';
-const initialState= {
-  games_list: [],
-  top_five: [],
-  games_loading:false,
-  games_error:false
+import React, { useEffect, useState } from 'react'
+
+const GamesContext = React.createContext()
+
+const GamesProvider = ({ children }) => {
+  const [gamesData, setGamesData] = useState([])
+
+  useEffect(() => {
+    // Make an HTTP request to the JSON file
+    var request = new XMLHttpRequest()
+    request.open('GET', '../../public/data.json', true)
+    request.onreadystatechange = function () {
+      if (request.readyState === 4 && request.status === 200) {
+        var jsonData = JSON.parse(request.responseText)
+        setGamesData(jsonData)
+      }
+    }
+    request.send()
+  }, [])
+
+  return (
+    <GamesContext.Provider value={gamesData}>{children}</GamesContext.Provider>
+  )
 }
 
-const GamesContext = createContext();
-
-export const GamesProvider = ({children}) => {
-  const [state, dispatch] = useReducer(reducer, initialState);
- 
-  const fetchGames = async() => {
-    dispatch({type:GET_GAMES_BEGIN})
-   
-  }
-
-return (
-  <GamesContext.Provider value={{}}>
-    {children}
-  </GamesContext.Provider>
-)
-}
-
-export const useGamesContext = () => {
-  return useContext(GamesContext)
-}
+export { GamesContext, GamesProvider }
