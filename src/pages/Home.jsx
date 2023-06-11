@@ -1,5 +1,6 @@
+import { Sliders } from "../components/index";
 const Home = () => (
-  <h1>Home</h1>
+  <Sliders />
 );
 
 export default Home;
