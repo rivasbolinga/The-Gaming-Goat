@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
-const Slide = ({id,name}) => {
+const Slide = ({id,name, url}) => {
+  console.log(url)
   const [currentSlide, setCurrentSlide] = useState(0)
 
   const goToNextSlide = () => {

@@ -8,7 +8,7 @@ const Sliders = () => {
     <section className="sliders-section">
       {gamesData.slice(0, 5).map((game) => {
   
-        return <Slide key={game.id} id={game.id} name={game.name}/>
+        return <Slide key={game.id} id={game.id} name={game.name} images={game.url}/>
       })}
     </section>
   )
