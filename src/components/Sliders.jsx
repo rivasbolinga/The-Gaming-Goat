@@ -1,14 +1,16 @@
 import React, { useContext } from 'react'
 import { GamesContext } from '../context/data_context'
+import { Slide } from './index'
 
 const Sliders = () => {
   const gamesData = useContext(GamesContext)
 
   return (
     <div>
-      {gamesData.map((game) => {
-        const { name } = game
-        return <h1 key={game.id}>{name}</h1>
+      {gamesData.slide(0,5).map((game) => {
+      
+        return 
+        <Slide slide={game} />
       })}
     </div>
   )
