@@ -4,15 +4,10 @@ import { Slide } from './index'
 
 const Sliders = () => {
   const gamesData = useContext(GamesContext)
-
+   const topFive = gamesData.slice(0, 5);
+   console.log(topFive);
   return (
-    <div>
-      {gamesData.slide(0,5).map((game) => {
-      
-        return 
-        <Slide slide={game} />
-      })}
-    </div>
+     <Slide topFive={topFive} />
   )
 }
 
