@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const Slide = ({ topFive }) => {
+const Slide = ({id,name}) => {
   const [currentSlide, setCurrentSlide] = useState(0)
 
   const goToNextSlide = () => {
@@ -14,10 +14,12 @@ const Slide = ({ topFive }) => {
   const restartSlides = () => {
     setCurrentSlide(0)
   }
+  
 
   return (
     <div>
-      <h1>{topFive[currentSlide].name}</h1>
+      {name}
+      {/* <h1>{topFive[currentSlide].name}</h1>
       <p>{topFive[currentSlide].summary}</p>
 
       <button onClick={goToPreviousSlide} disabled={currentSlide === 0}>
@@ -31,7 +33,7 @@ const Slide = ({ topFive }) => {
       </button>
       <button onClick={restartSlides} disabled={currentSlide === 0}>
         Restart
-      </button>
+      </button> */}
     </div>
   )
 }

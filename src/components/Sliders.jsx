@@ -4,10 +4,13 @@ import { Slide } from './index'
 
 const Sliders = () => {
   const gamesData = useContext(GamesContext)
-   const topFive = gamesData.slice(0, 5);
-   console.log(topFive);
   return (
-     <Slide topFive={topFive} />
+    <section className="sliders-section">
+      {gamesData.slice(0, 5).map((game) => {
+  
+        return <Slide key={game.id} id={game.id} name={game.name}/>
+      })}
+    </section>
   )
 }
 

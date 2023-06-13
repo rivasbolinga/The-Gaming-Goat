@@ -17,6 +17,7 @@ const GamesProvider = ({ children }) => {
     }
     request.send()
   }, [])
+console.log(gamesData)
 
   return (
     <GamesContext.Provider value={gamesData}>{children}</GamesContext.Provider>
