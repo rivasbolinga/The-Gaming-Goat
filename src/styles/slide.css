@@ -44,7 +44,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 50px 60px;
+  padding: 60px;
   gap: 16px;
 }
 
@@ -59,11 +59,12 @@
 
 .slider-button {
   background-color: rgba(58, 58, 77, 0.652);
-  color: rgb(159,142,205);
+  color: white;
   border: 1px solid rgb(159,142,205);
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 15px;
   margin: 0 10px;
+  font-size: 17px;
 }
 
 .slide-image {
@@ -92,4 +93,16 @@
   color: rgba(255, 255, 255, 0.695);
    font-family: 'Nunito Sans', sans-serif;
    width: 80%;
+ }
+
+ .see-details {
+  background-color: rgb(55,54,80);
+  font-family: 'Nunito Sans', sans-serif;
+  color: white;
+   border: 1px solid rgb(159,142,205);
+   border-radius: 15px;
+   text-transform: uppercase;
+   padding: 10px;
+   width: 170px;
+   height: 40px;
  }
