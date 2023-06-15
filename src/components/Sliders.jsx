@@ -23,6 +23,22 @@ const Sliders = () => {
   return (
     <section className="sliders-section">
       <div className="slider-container">
+        <div className="buttons">
+          <button
+            className="slider-button previous"
+            onClick={handlePreviousSlide}
+            disabled={currentSlide === 0}
+          >
+            &larr;
+          </button>
+          <button
+            className="slider-button next"
+            onClick={handleNextSlide}
+            disabled={currentSlide === topFive.length - 1}
+          >
+            &rarr;
+          </button>
+        </div>
         <div
           className="slider-wrapper"
           style={{ transform: `translateX(-${currentSlide * 100}%)` }}
@@ -41,20 +57,6 @@ const Sliders = () => {
           ))}
         </div>
       </div>
-      <button
-        className="slider-button previous"
-        onClick={handlePreviousSlide}
-        disabled={currentSlide === 0}
-      >
-        Previous
-      </button>
-      <button
-        className="slider-button next"
-        onClick={handleNextSlide}
-        disabled={currentSlide === topFive.length - 1}
-      >
-        Next
-      </button>
     </section>
   )
 }

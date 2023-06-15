@@ -1,3 +1,6 @@
+.slider-section {
+  width: 100%;
+}
 .slider-container {
   width: 100%;
   overflow: hidden;
@@ -5,6 +8,7 @@
 
 .slider-wrapper {
   display: flex;
+  width: 100%;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -20,21 +24,72 @@
   visibility: visible;
   width: 100%;
 }
+.slide-image {
+ width: 100%;
+ height: 100%;
+}
 
-/* .slide-component {
+.slide-component {
   width: 100%;
+  height: 400px;
+}
+
+
+.slide-details-container {
+  position: relative;
+  z-index: 1;
+  left: 0;
   height: 100%;
-  
+  background-color: rgba(6, 3, 30, 0.496);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 50px 60px;
+  gap: 16px;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 4;
+  top: 45%;
+}
+
+.slider-button {
+  background-color: rgba(58, 58, 77, 0.652);
+  color: rgb(159,142,205);
+  border: 1px solid rgb(159,142,205);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 10px;
 }
 
 .slide-image {
-  position: relative;
+  position: absolute;
   z-index: 0;
+  height: 100%;
 }
 
-.slide-details-container {
-  position: absolute;
-  z-index: 1;
-  background-color: white;
-} */
+.slide-tag {
+  background-color: rgb(165,94,253);
+  padding: 10px;
+  color: white;
+  width: 50px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
+}
 
+.slide-game-name {
+  color: white;
+   font-family: 'Nunito Sans', sans-serif;
+ }
+
+ .slide-game-description {
+  color: rgba(255, 255, 255, 0.695);
+   font-family: 'Nunito Sans', sans-serif;
+   width: 80%;
+ }
