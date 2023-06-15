@@ -49,6 +49,7 @@ const Sliders = () => {
               key={game.id}
             >
               <Slide
+                index={index}
                 name={game.name}
                 images={game.images}
                 summary={game.summary}

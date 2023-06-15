@@ -45,7 +45,6 @@
   flex-direction: column;
   justify-content: flex-start;
   padding: 60px;
-  gap: 16px;
 }
 .details {
    display: flex;
@@ -81,9 +80,10 @@
 
 .slide-tag {
   background-color: rgb(165,94,253);
-  padding: 10px;
+  padding: 5px 10px;
   color: white;
   width: 50px;
+  font-size: 14px;
   border-radius: 20px;
   text-transform: uppercase;
   text-align: center;
@@ -119,9 +119,29 @@
   padding: 0;
 }
 .details {
-  background-color: rgba(15, 15, 42, 0.256);
+  background: linear-gradient(to left, rgba(15, 15, 42, 2.216), rgba(15, 15, 42, 0.837), rgba(15, 15, 42, 0.758), rgba(15, 15, 42, 0.602), rgba(15, 15, 42, 0.49), transparent);
   width: 35%;
   height: 100%;
-  padding: 50px 30px;
+  padding: 50px 30px 30px 100px;
+}
+
+.line-container {
+  position: absolute;
+  z-index: 5;
+  top: 90%;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.line {
+  width: 100%;
+  height: 0.5px;
+  background-color: rgba(255, 255, 255, 0.428);
+}
+.number {
+  color: white;
 }
 }

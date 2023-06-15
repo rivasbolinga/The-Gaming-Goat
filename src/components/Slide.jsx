@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import '../styles/slide.css';
 
-const Slide = ({name, images, summary}) => {
-
+const Slide = ({index,name, images, summary}) => {
+console.log(index)
   return (
     <div className="slide-component">
       <img
@@ -20,6 +20,11 @@ const Slide = ({name, images, summary}) => {
           <button type="button" className="see-details btn">
             See details &rarr;
           </button>
+        </div>
+        <div className='line-container'>
+          <div className='line'></div>
+          <p className='number'>{`${index+1}/5`}</p>
+          <div className='line'></div>
         </div>
       </div>
     </div>
