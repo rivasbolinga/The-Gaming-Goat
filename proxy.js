@@ -19,7 +19,7 @@ app.get('/games', async (req, res) => {
     const gamesResponse = await fetch(API_ENDPOINT, {
       method: 'POST',
       headers: headers,
-      body: 'fields *;',
+      body: 'fields *; limit 20;',
     });
 
     const gamesData = await gamesResponse.json();
@@ -32,10 +32,11 @@ app.get('/games', async (req, res) => {
         })
 
         const imagesData = await imagesResponse.json();
-        // const screenshots = imagesData[0]?.screenshots || [];
-        // const images = screenshots.map((screenshot) => screenshot.image_id)
+        
+        const screenshots = imagesData[0]?.screenshots || [];
+        const images = screenshots.map((screenshot) => screenshot.image_id)
 
-        return { ...game, imagesData };
+        return { ...game, images };
       })
     );
 
