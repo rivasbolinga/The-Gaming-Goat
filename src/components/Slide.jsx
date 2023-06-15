@@ -11,14 +11,16 @@ const Slide = ({name, images, summary}) => {
         src={`https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/${images[1]}.jpg`}
       />
       <div className="slide-details-container">
-        <div className="slide-tag">Top 5</div>
-        <h1 className="slide-game-name">{name}</h1>
-        <p className="slide-game-description">
-          {summary.length > 100 ? `${summary.slice(0, 100)}...` : summary}
-        </p>
-        <button type="button" className="see-details btn">
-          See details &rarr;
-        </button>
+        <div className="details">
+          <div className="slide-tag">Top 5</div>
+          <h1 className="slide-game-name">{name}</h1>
+          <p className="slide-game-description">
+            {summary.length > 100 ? `${summary.slice(0, 100)}...` : summary}
+          </p>
+          <button type="button" className="see-details btn">
+            See details &rarr;
+          </button>
+        </div>
       </div>
     </div>
   )

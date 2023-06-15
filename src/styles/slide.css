@@ -47,6 +47,12 @@
   padding: 60px;
   gap: 16px;
 }
+.details {
+   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 14px;
+}
 
 .buttons {
   width: 100%;
@@ -106,3 +112,16 @@
    width: 170px;
    height: 40px;
  }
+
+@media (min-width:768px) {
+.slide-details-container {
+  align-items: flex-end;
+  padding: 0;
+}
+.details {
+  background-color: rgba(15, 15, 42, 0.256);
+  width: 35%;
+  height: 100%;
+  padding: 50px 30px;
+}
+}
