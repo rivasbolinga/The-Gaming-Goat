@@ -1,0 +1,40 @@
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+  visibility: visible;
+  width: 100%;
+}
+
+/* .slide-component {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.slide-image {
+  position: relative;
+  z-index: 0;
+}
+
+.slide-details-container {
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+} */
+

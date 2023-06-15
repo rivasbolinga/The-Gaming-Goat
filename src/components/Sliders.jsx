@@ -1,38 +1,60 @@
-import React, { useContext } from 'react'
+import React, { useContext, useRef, useState } from 'react'
 import { GamesContext } from '../context/data_context'
 import { Slide } from './index'
 
 const Sliders = () => {
   const gamesData = useContext(GamesContext)
+  const topFive = gamesData.filter((game) => game.images.length > 0).slice(0, 5)
 
-  const topFive = gamesData.filter((game) => game.images.length > 0)
   const [currentSlide, setCurrentSlide] = useState(0)
 
-  const goToNextSlide = () => {
-    setCurrentSlide(currentSlide + 1)
+  const handlePreviousSlide = () => {
+    if (currentSlide > 0) {
+      setCurrentSlide(currentSlide - 1)
+    }
   }
 
-  const goToPreviousSlide = () => {
-    setCurrentSlide(currentSlide - 1)
-  }
-
-  const restartSlides = () => {
-    setCurrentSlide(0)
+  const handleNextSlide = () => {
+    if (currentSlide < topFive.length - 1) {
+      setCurrentSlide(currentSlide + 1)
+    }
   }
 
   return (
     <section className="sliders-section">
-      {topFive.slice(0, 5).map((game) => {
-        return (
-          <Slide
-            key={game.id}
-            id={game.id}
-            name={game.name}
-            images={game.images}
-            summary={game.summary}
-          />
-        )
-      })}
+      <div className="slider-container">
+        <div
+          className="slider-wrapper"
+          style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+        >
+          {topFive.map((game, index) => (
+            <div
+              className={`slide ${index === currentSlide ? 'active' : ''}`}
+              key={game.id}
+            >
+              <Slide
+                name={game.name}
+                images={game.images}
+                summary={game.summary}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+      <button
+        className="slider-button previous"
+        onClick={handlePreviousSlide}
+        disabled={currentSlide === 0}
+      >
+        Previous
+      </button>
+      <button
+        className="slider-button next"
+        onClick={handleNextSlide}
+        disabled={currentSlide === topFive.length - 1}
+      >
+        Next
+      </button>
     </section>
   )
 }

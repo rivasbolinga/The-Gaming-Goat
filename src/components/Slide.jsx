@@ -1,22 +1,7 @@
 import React, { useState } from 'react'
+import '../styles/slide.css';
 
-const Slide = ({id,name, images, summary}) => {
-
-  // console.log(url)
-  // const [currentSlide, setCurrentSlide] = useState(0)
-
-  // const goToNextSlide = () => {
-  //   setCurrentSlide(currentSlide + 1)
-  // }
-
-  // const goToPreviousSlide = () => {
-  //   setCurrentSlide(currentSlide - 1)
-  // }
-
-  // const restartSlides = () => {
-  //   setCurrentSlide(0)
-  // }
-  
+const Slide = ({name, images, summary}) => {
 
   return (
     <div className="slide-component">
