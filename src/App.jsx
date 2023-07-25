@@ -29,7 +29,7 @@ function App() {
           <Route path="/my-profile" element={<MyProfile />} />
           <Route path="*" element={<Error />} />
         </Routes>
-        <Footer />
+      
       </HashRouter>
     </>
   );
