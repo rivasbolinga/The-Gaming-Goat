@@ -1,0 +1,62 @@
+[
+    {
+        "game_name":"Remnant II",
+        "latest":true,
+        "game_genre":"fighting",
+        "game_photo":"",
+      
+        "platform":"PlayStation 5,Xbox one,PC",
+        "summary":"Remnant II is the sequel to the best-selling game Remnant: From the Ashes that pits survivors of humanity against new deadly creatures and god-like bosses across terrifying worlds.Play solo or co-op with two other friends to explore the depths of the unknown to stop an evil from destroying reality itself. To succeed, players will need to rely on their own skills and those of their team to overcome the toughest challenges and to stave off humanity's extinction"
+
+    },
+    {
+        "game_name":"Viewfinder",
+        "latest":true,
+        "game_genre":"adventure",
+        "game_photo":"",
+      
+        "platform":"PlayStation 5,Xbox one,PC",
+        "summary":"Challenge perception, redefine reality, and reshape the world around you with an instant camera. Viewfinder is a new single player game offering gamers hours of interesting and fun experiences while uncovering the mysteries left behind."
+    },
+    {
+        "game_name":"Exoprimal",
+        "latest":true,
+        "game_genre":"action",
+        "game_photo":"",
+      
+        "platform":"PlayStation 4,Xbox one,PC",
+
+        "summary":"Exoprimal is an online, team-based action game that pits humanity's cutting-edge exosuit technology against history's most ferocious beasts - dinosaurs. Exosuits are grouped into different roles, and players will pilot these exosuits to hold firm against overwhelming dinosaur swarms in online-only, team-based action game modes. Dino Survival, the main game mode, sees two teams of five players compete in a variety of PvE and PvP missions. Players will be transported to the scene of the latest dinosaur outbreak and follow Leviathan's guidance to complete objectives. The team that completes the mission first will emerge victorious"
+    },
+    {
+        "game_name":"ATELIER MARIE REMAKE: THE ALCHEMIST OF SALBURG",
+        "latest":true,
+        "game_genre":"role-playing",
+        "game_photo":"",
+      
+        "platform":"PlayStation 5,PlayStation 4,Switch,PC",
+        
+        "summary":"At the Royal Academy of Magic (the Academy for short), Marie is failing in her attempts to study alchemy. One day, she is given an atelier by her professor as part of a special graduation exam. In order to graduate, Marie must complete an item that will impress her professor."
+    },
+    {
+        "game_name":"OPERATION WOLF RETURNS: FIRST MISSION VR",
+        "latest":true,
+        "game_genre":"action",
+        "game_photo":"",
+      
+        "platform":"PlayStation 5,PC",
+        
+        "summary":"A reinterpretation of one of the founding games of the Rail Shooter genre, released as an arcade game in 1987, Operation Wolf Returns: First Mission adopts the same DNA as in the original game (sustained action in an atmosphere straight out of 1980s action films) but offers a new design."
+    },
+
+    {
+        "game_name":"DEAD BY DAYLIGHT: NICOLAS CAGE",
+        "latest":true,
+        "game_genre":"action",
+        "game_photo":"",
+      
+        "platform":"PlayStation 5,PlayStation 4,xbox one,PC",
+        
+        "summary":"Cage plays himself, Nicolas Cage, in Dead by Daylight. He is doing the voice work for his character, too, including screams, grunts, and any 'minimal exasperated expression'"
+    }
+]

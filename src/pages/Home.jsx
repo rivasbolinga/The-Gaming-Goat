@@ -1,5 +1,6 @@
 import GameBox from '../components/GameBox'
 import './pages.css'
+import '../../games.json'
 function Home() {
   return (<><div className="body">
 

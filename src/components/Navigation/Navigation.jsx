@@ -7,7 +7,7 @@ import '../../styles/Navigation.css';
 const Navigation = () => (
   <nav className="navigation-bar">
     <Link to="/" className="logo-container">
-      <img alt="logo goat" className="logo-icon" src={logoIcon} />
+  <div className='logo'>The Gaming G.O.A.T.</div>
     </Link>
     <div className="filter-container">
       <div className="vertical-line" />
