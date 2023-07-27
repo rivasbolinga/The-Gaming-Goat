@@ -32,9 +32,9 @@ const [game , setGame] = useState([])
 <div className='latest-games'>
   <div className='res'>
 {
-  game?.length > 0 ? (<>{game.map((gameResult)=> ( 
+  game.length > 0 ? (<>{game.map((gameResult)=> ( 
     <GameBox key={gameResult.kkey} kkey={gameResult.kkey}/>
-  ))}</>):(<>nothing found...</>)
+  ))}</>):(<></>)
 }
 <GameBox/>
 <GameBox/>
