@@ -1,8 +1,8 @@
-function GameBox({kkey}) {
+function GameBox(props) {
     return(
-        <div key={kkey} className="game-box">
-            <img src={kkey.background_image} alt="" />
-        </div>
+      <div className="game-box">
+        <img src={props.picture} alt="" />
+      </div>
     )
 }
 export default GameBox

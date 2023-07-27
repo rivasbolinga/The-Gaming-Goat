@@ -16,7 +16,7 @@ const [game , setGame] = useState([])
       );
       setGame(response.data.results);
       console.log("Response Data:", response.data);
-      console.log("Game State:", game); // Log the game state
+      console.log("Game State:", game);
     } catch (error) {
       console.error("Error fetching data:", error);
     }
@@ -24,33 +24,23 @@ const [game , setGame] = useState([])
   useEffect(() => {
     fetchGameData();
   }, []);
-  
+  console.log(game);
   return (<><div className="body">
 
     <div className='latest'>
     <h3>Latest games</h3>
 <div className='latest-games'>
-  <div className='res'>
+
 {
-  game.length > 0 ? (<>{game.map((gameResult)=> ( 
-    <GameBox key={gameResult.kkey} kkey={gameResult.kkey}/>
-  ))}</>):(<></>)
+  game?.length > 0 ? (<div className='res'>{ game.map((games)=>(<GameBox name = {games.name} picture = {games.background_image}/>
+  )
+
+
+  )   
+ }</div>):(<></>)
 }
-<GameBox/>
-<GameBox/>
-<GameBox/>
-<GameBox/>
-<GameBox/>
-<GameBox/>
-<GameBox/>
-<GameBox/>
-<GameBox/>
-<GameBox/>
-<GameBox/>
-<GameBox/>
-<GameBox/>
-<GameBox/>
-  </div>
+
+
 
 </div>
     </div>
