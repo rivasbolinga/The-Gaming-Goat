@@ -58,5 +58,25 @@
         "platform":"PlayStation 5,PlayStation 4,xbox one,PC",
         
         "summary":"Cage plays himself, Nicolas Cage, in Dead by Daylight. He is doing the voice work for his character, too, including screams, grunts, and any 'minimal exasperated expression'"
+    },
+    {
+        "game_name":"SHADOW SAMURAI REVENGE",
+        "latest":true,
+        "game_genre":"action",
+        "game_image":"",
+      
+        "platform":"PlayStation 5,PlayStation 4,switch",
+        
+        "summary":"This time has come. Become a true samurai and help free Arashi's son.Arashi's son was kidnapped and his wife was killed by a youkai called Orochi. For the last decade, Orochi had been sealed by Arashi, but now Arashi has to take revenge and rescue his son."
+    },
+    {
+        "game_name":"SYZYGY: THE POWER OF ECLIPSE",
+        "latest":true,
+        "game_genre":"action",
+        "game_image":"",
+      
+        "platform":"PlayStation 5,PlayStation 4,switch",
+        
+        "summary":"This time has come. Become a true samurai and help free Arashi's son.Arashi's son was kidnapped and his wife was killed by a youkai called Orochi. For the last decade, Orochi had been sealed by Arashi, but now Arashi has to take revenge and rescue his son."
     }
 ]

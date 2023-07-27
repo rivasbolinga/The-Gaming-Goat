@@ -8,14 +8,15 @@
   
 }
 .game-box{
-    width: 150px;
-    height: 200px;
-    background-color: aqua;
+    width: 200px;
+    height: 150px;
+    background-color:rgb(0, 255, 255);
    
     margin-right: 5px;
     border-radius: 8px;
 
 }
+
 .latest{
     width: 100%;
  
@@ -31,7 +32,17 @@ align-items: center;
 h3{
     color: white;
 }
+img{
+    width: 100%;
+    height: 100%;
+}
+.mgbox{
+    border-radius: 8px;
+    border: none;
+ width: auto;
+ height: auto;
 
+}
 .latest-games{
     
     display: flex;
@@ -54,6 +65,9 @@ h3{
 
 .res{
     display: flex;
+    height: 150px;
+
+
    
 }
 @media(max-width:900px){
