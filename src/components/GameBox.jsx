@@ -1,4 +1,4 @@
-function GameBox() {
+function GameBox(kkey) {
     return(
         <div className="game-box"></div>
     )
